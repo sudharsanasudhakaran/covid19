@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="post-preview">
+        <table>
+          <tr>
+            <th>Province State</th>
+            <th>Country Region</th>
+            <th>Confirmed</th>
+            <th>Recovered</th>
+            <th>Deaths</th>
+          </tr>
+
+          <tr *ngFor="let post of items">
+            <td><button class="btn btn-dark" >{{post.provinceState}}</button> </td>
+            <td><button class="btn btn-dark" >{{post.countryRegion}}</button> </td>
+            <td><button class="btn btn-dark" >{{post.Confirmed}}</button> </td>
+            <td><button class="btn btn-dark" >{{post.recovered}}</button> </td>
+            <td><button class="btn btn-dark" >{{post.deaths}}</button> </td>
+          </tr>
+
+      </table>
+    </div>
+    <hr>
+  </div>
+</div>
+</div>
